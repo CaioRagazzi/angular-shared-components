@@ -41,7 +41,11 @@
     },
     "blog-caio": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        }
+      },
       "root": "projects/blog-caio",
       "sourceRoot": "projects/blog-caio/src",
       "prefix": "app",
@@ -52,17 +56,13 @@
             "outputPath": "dist/blog-caio",
             "index": "projects/blog-caio/src/index.html",
             "browser": "projects/blog-caio/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/blog-caio/tsconfig.app.json",
             "assets": [
               "projects/blog-caio/src/favicon.ico",
               "projects/blog-caio/src/assets"
             ],
-            "styles": [
-              "projects/blog-caio/src/styles.css"
-            ],
+            "styles": ["projects/blog-caio/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -110,18 +110,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/blog-caio/tsconfig.spec.json",
             "assets": [
               "projects/blog-caio/src/favicon.ico",
               "projects/blog-caio/src/assets"
             ],
-            "styles": [
-              "projects/blog-caio/src/styles.css"
-            ],
+            "styles": ["projects/blog-caio/src/styles.css"],
             "scripts": []
           }
         }
