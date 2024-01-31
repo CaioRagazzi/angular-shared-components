@@ -1,0 +1,14 @@
+.main-title {
+  display: flex;
+  justify-content: center;
+  min-height: 53px;
+  background: #7ac9ed;
+  padding: 20px;
+}
+
+.title-text {
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}

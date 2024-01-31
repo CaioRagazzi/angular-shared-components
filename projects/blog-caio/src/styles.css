@@ -3,3 +3,9 @@ body {
   margin: 0;
   height: 100%;
 }
+
+.center {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

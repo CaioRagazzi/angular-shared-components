@@ -1,15 +1,12 @@
 header {
   min-height: 118px;
   background: #231f20;
-  padding: 10px 0;
   color: white;
 }
 
 .header-container {
   display: flex;
   flex: 1;
-  max-width: 1300px;
-  margin: 0 auto;
   align-items: center;
 }
 
