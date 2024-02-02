@@ -1,10 +1,14 @@
 <div class="center">
   <div class="articles-content">
-    <app-article></app-article>
-    <app-article></app-article>
-    <app-article></app-article>
-    <app-article></app-article>
-    <app-article></app-article>
-    <app-article></app-article>
+    <lib-ca-card title="Title" previewText="Preview text lorem">
+      <ng-template caTemplate="image">
+        <img
+          class="image"
+          src="../../../assets/JavaScriptListImage.png"
+          alt="JS Image"
+        />
+      </ng-template>
+    </lib-ca-card>
+    <lib-ca-card title="Title" previewText="Preview text lorem"></lib-ca-card>
   </div>
 </div>
