@@ -17,7 +17,7 @@ export class CaCardComponent implements AfterContentInit {
   @Input() title = '';
   @Input() previewText = '';
 
-  headerTemplate: TemplateRef<any> | undefined;
+  imageTemplate: TemplateRef<any> | undefined;
 
   @ContentChildren(CaTemplate) templates: QueryList<CaTemplate> | undefined;
 
@@ -25,7 +25,7 @@ export class CaCardComponent implements AfterContentInit {
     (this.templates as QueryList<CaTemplate>).forEach((item) => {
       switch (item.getType()) {
         case 'image':
-          this.headerTemplate = item.template;
+          this.imageTemplate = item.template;
           break;
 
         default:
