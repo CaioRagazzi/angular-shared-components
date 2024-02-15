@@ -1,17 +1,14 @@
 <div class="card-main-content">
-  <div class="image-content">
-    <div class="p-card-title" *ngIf="imageTemplate">
-      <ng-container *ngTemplateOutlet="imageTemplate"></ng-container>
-    </div>
+  <div class="title-container">
+    <span class="title-text">{{title}}</span>
   </div>
-  <div class="card-preview-content">
-    <div>
-      <h2 class="title-text">{{ title }}</h2>
+  <div style="display: flex;">
+    <div class="image-content">
+      <ng-content select="[image]"></ng-content>
     </div>
     <div>
-      <p class="preview-text">
+      <p class="content-text">
         {{ previewText }}
       </p>
     </div>
-  </div>
 </div>

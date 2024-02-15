@@ -4,3 +4,8 @@
   margin-right: 40px;
   overflow-x: hidden;
 }
+
+.image {
+  height: 100%;
+  max-width: 100%;
+}
